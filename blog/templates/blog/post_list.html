@@ -11,7 +11,11 @@
         <h3>Witam na stronie bloga</h3>
         <h4>Witam na stronie bloga</h4>
     </div>
+    {% comment %}
 
+    co sie tutaj działo TO JEST KOMENTARZ
+
+    {% endcomment %}
     {% for post in posts %}
     <div>
         <p>opublikowany: {{ post.publish_date }}</p>
