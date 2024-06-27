@@ -3,14 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+
 ]
-
-# urls.py
-
-from django.conf import settings
-from django.conf.urls.static import static
-
-
-# Dodaj poniższe linie tylko w trybie DEBUG
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
